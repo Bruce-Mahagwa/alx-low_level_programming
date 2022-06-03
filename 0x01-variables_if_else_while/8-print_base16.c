@@ -8,16 +8,13 @@ int main(void)
 {
 	int i;
 
-	int b;
-
 	int c;
 
 	int d;
 
 	for (i = 0; i < 10; i++)
 	{
-		b = i;
-		putchar('b');
+		putchar(i);
 	}
 	for (c = 'a'; c < 'g'; c++)
 	{
