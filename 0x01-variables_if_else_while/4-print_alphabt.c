@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char a;
+	int a;
 
 	if (a != 'q' && a != 'e')
 	{
