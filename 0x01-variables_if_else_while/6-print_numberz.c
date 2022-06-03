@@ -1,16 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - Prints single dgit numbers 
+ * main - Prints single dgit numbers
  *
  * Return: Returns zero
  */
 int main(void)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i < 10; i ++)
+	while (i < 10)
 	{
 		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);

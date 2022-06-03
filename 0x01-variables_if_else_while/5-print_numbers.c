@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/** 
+/**
  * main - Print even numbers
  *
  * Return: Return 0
