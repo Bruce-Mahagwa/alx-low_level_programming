@@ -17,7 +17,7 @@ int main(void)
 	for (i = 0; i < 10; i++)
 	{
 		b = i;
-		putchar(b);
+		putchar('b');
 	}
 	for (c = 'a'; c < 'g'; c++)
 	{
