@@ -8,13 +8,10 @@
 int main(void)
 {
 	int a;
-
-	if (a != 'q' && a != 'e')
+	while (a != 'e' && a != 'q')
 	{
-		for (a = 'a'; a <= 'z'; a ++)
-		{
-			putchar(a);
-		}
+		putchar(a);
+		a++;
 	}
 	putchar('\n');
 	return (0);
