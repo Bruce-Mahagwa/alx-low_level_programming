@@ -9,10 +9,11 @@
 int main(void)
 {
 	int n;
-
+	int d;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int d = n % 10;
+	
+	d = n % 10;
 
 	if (n > 5) 
 	{
