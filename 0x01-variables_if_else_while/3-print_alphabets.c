@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints all letters
  *
@@ -7,14 +8,17 @@
 int main(void) 
 {
 	char u;
+
 	char l;
-	for (u = "a"; u <= "z"; u++)
+
+	for (u = 'a'; u <= 'z'; u++)
 	{
 		putchar(u);
 	}
-	for (l = "A"; l <= "Z"; l++)
+	for (l = 'A'; l <= 'Z'; l++)
 	{
-		putchar(l\n);
+		putchar(l);
 	}
+	putchar('\n');
 	return (0);
 }
