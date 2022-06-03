@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Prints letters except q and e
  *
@@ -8,11 +9,13 @@ int main(void)
 {
 	char a;
 
-	if (a !== q && a !== e)
+	if (a != 'q' && a != 'e')
 	{
-		for (a = "a"; a <= "z"; a ++)
+		for (a = 'a'; a <= 'z'; a ++)
 		{
 			putchar(a);
 		}
 	}
+	putchar('\n');
+	return (0);
 }
