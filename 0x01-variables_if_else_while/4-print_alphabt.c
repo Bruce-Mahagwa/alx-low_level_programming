@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	int a;
+	char a;
+
 	while (a != 'e' && a != 'q')
 	{
 		putchar(a);
