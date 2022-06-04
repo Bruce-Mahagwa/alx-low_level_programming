@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(gcc -S $CFILE -o main.s | less)
+gcc -S $CFILE -o main.s
