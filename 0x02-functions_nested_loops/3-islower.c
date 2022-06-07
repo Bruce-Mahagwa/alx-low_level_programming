@@ -4,6 +4,7 @@
 #include <unistd.h>
 /**
  * _islower - checks for lower case character
+ * @c: First operand
  *
  * Return: Returns an int
  */

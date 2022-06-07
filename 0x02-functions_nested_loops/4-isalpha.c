@@ -3,6 +3,7 @@
 #include <ctype.h>
 /**
  * _isalpha - checks for alpha characters only
+ * @c: First Operand
  *
  * Return: Returns 0 or 1
  */
