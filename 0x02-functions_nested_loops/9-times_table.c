@@ -16,7 +16,7 @@ void times_table(void)
 		while (y <= 81)
 		{
 			putchar(y);
-			y + 9;
+			y += 9;
 		}
 		putchar('\n');
 		x++;
