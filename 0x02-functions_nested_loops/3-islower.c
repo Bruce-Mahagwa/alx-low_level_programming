@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <ctype.h>
+#include <unistd.h>
 /**
  * _islower - checks for lower case character
  *
