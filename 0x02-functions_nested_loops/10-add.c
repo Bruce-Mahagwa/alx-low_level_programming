@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * add - adds 2 ints 
+ * add - adds 2 ints
  * @x: First operand
  * @y: Second operand
  *
