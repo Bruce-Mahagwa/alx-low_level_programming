@@ -6,17 +6,20 @@
  */
 void times_table(void)
 {
-	int x = 0;
+	int x = 1;
 
 	int y;
 
+	int res;
+
 	while (x < 10)
 	{
-		y = 0;
-		while (y <= 81)
+		y = 1;
+		while (y <= 10)
 		{
-			putchar(y);
-			y += 9;
+			res = y * x;
+			putchar(res);
+			y++;
 		}
 		putchar('\n');
 		x++;
