@@ -8,9 +8,11 @@
  */
 void print_to_98(int n)
 {
+	int y = 98;
+
 	if (n == 98)
 	{
-		printf("%d", n);
+		printf("%d\n", n);
 	}
 	if (n < 98)
 	{
@@ -18,7 +20,7 @@ void print_to_98(int n)
 		{
 			printf("%d, ", n);
 			n++;
-			putchar(98);
+			printf("%d", y);
 		}
 	}
 	if (n == 98)
@@ -27,7 +29,7 @@ void print_to_98(int n)
 		{
 			printf("%d, ", n);
 			n--;
-			putchar(98);
+			printf("%d", y);
 		}
 	}
 	
