@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * _abs - Prints absolute value
- * @int y: First operand
+ * @int x: First operand
  *
  * Return: Reurns absolute value
  */
