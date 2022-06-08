@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * positive_or_negative - tests the sign of an int
- * @i: First operand
+ * main - tests the sign of an int
  *
- * Return: Returns nothing
+ * Return: Returns 0
  */
-void positive_or_negative(int 0);
+int main(void)
+{
+	int i = 0;
+
+	positive_or_negative(i);
+	return(0);
+}
