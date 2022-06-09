@@ -28,9 +28,8 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-	putchar(' ');
+	printf("%c", ' ');
 	}
 	putchar('\n');
-
 	return (0);
 }
