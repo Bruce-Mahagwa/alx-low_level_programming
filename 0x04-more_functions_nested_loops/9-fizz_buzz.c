@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * fizz_buzz - Prints numbers 1 to 100 with fizz and buzz interpolations
  *
@@ -28,7 +29,8 @@ int main(void)
 			printf("%d", i);
 		}
 	putchar(' ');
-	putchar('\n');
 	}
+	putchar('\n');
+
 	return (0);
 }
