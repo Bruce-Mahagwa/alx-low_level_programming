@@ -5,7 +5,7 @@
  *
  * Return: Retuns zero
  */
-int fizz_buzz()
+int main(void)
 {
 	int i;
 
