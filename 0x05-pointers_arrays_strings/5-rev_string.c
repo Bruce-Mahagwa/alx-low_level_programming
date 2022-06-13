@@ -9,13 +9,13 @@
  */
 void rev_string(char *s)
 {
-	int n;
-
 	int i;
 	
-	n = sizeof(s);
-	for (i = n - 1; i >= 0; i--)
+	int n;
+
+	for (i = 0; i != '\0'; ++i);
+	for (n = i; n >= 0; n--)
 	{
-		_putchar(s[i]);
+		_putchar(s[n]);
 	}
 }
