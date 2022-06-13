@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * reset_to_98 - resets avariable to 98 using a pointer
- * @*n: Pointer
+ * @n: Pointer
  *
  * Return: Returns void
  */
