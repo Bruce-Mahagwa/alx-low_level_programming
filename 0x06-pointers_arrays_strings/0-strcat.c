@@ -10,17 +10,5 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
-
-	int j;
-
-	int k;
-
-	j = strlen(src);
-	i = strlen(dest);
-	k = i + j;
-	char strings[k];
-
-	strcpy(strings, dest);
-	return (strcat(strings, src));
+	return (strcat(dest, src));
 }
