@@ -11,17 +11,5 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
-
-	int j;
-
-	int k;
-
-	i = strlen(dest);
-	j = strlen(src);
-	k = i + j;
-	char strings[k];
-
-	strcpy(strings, dest);
-	return (strncpy(strings, src, n));
+	return (strncpy(dest, src, n));
 }
