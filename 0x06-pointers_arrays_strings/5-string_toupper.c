@@ -12,14 +12,16 @@ char *string_toupper(char *ptr)
 {
 	int i;
 
+	int j;
+
 	i = strlen(ptr) - 1;
-	for (i = 0; i < i; i++)
+	for (j = 0; i < j; j++)
 	{
-		if (islower(ptr[i]) == 0)
+		if (islower(ptr[j]) == 0)
 		{
-			toupper(ptr[i]);
+			ptr[j] = toupper(ptr[j]);
 		}
-	_putchar(ptr[i]);
+	_putchar(ptr[j]);
 	}
 	return (0);
 }
