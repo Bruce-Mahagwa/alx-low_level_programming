@@ -24,7 +24,9 @@ char *cap_string(char *ptr)
 		if (ptr[i] == ' ')
 			{
 				if ((ptr[i] >= 'a') && (ptr[i] <= 'z'))
+				{
 					ptr[i] = ptr[i] - 32;
+				}
 				continue;
 			}
 		}
@@ -35,7 +37,7 @@ char *cap_string(char *ptr)
 				ptr[i] = ptr[i] + 32;
 			}
 		}
-	putchar(ptr);
+	_putchar(ptr[i]);
 	}
 	return (0);
 }
