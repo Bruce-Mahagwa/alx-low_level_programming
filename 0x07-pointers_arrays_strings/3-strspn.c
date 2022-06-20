@@ -8,7 +8,7 @@
  *
  * Return: Number of bytes that match the s
  */
-unsigned int _strpan(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int n;
 
