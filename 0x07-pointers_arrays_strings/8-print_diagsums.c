@@ -8,32 +8,15 @@
  * Return: void
  */
 void print_diagsums(int *a, int size)
+{
+	int i, one = 0, two = 0;
 
-	int p;
-
-	int s;
-
-	int i;
-
-	int j;
-	
-	int t[size][size];
-
-	a = t;
-	for (i = 0; i < size; i++)
+	for (i = 0; i < (size * size); i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-			{
-				p += a[i][j];
-			}
-			if ((i + j) == (size - 1))
-			{
-				s += a[i][j];
-			}
+		if (i % (size + 1) == 0)
+			one += *(a + 1);
+		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
+			two += *(a + 1);
 		}
-	}
-	printf("%d, ", p);
-	printf("%d", s);
+	printf("%d, %d\n", one, two);
 }
