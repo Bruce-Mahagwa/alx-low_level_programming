@@ -9,23 +9,4 @@
  */
 int is_palindrome(char *s)
 {
-	int n = strlen(s);
 
-	char str[n];
-
-	strcpy(str, s);
-	strrev(str);
-	if (s == "")
-	{
-		return (0);
-	}
-	if (strcmp(str, s) == 0)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
-	return (0);
-}
