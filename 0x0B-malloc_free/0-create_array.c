@@ -20,14 +20,13 @@ char *create_array(unsigned int size, char c)
 	}
 	while (1)
 	{
-		str = malloc(INT_MAX);
+		str = malloc(sizeof(unsigned int) * size);
 		if (str == NULL)
 		{
 			return (NULL);
 		}
-	str = malloc(sizeof(unsigned int) * size);
 	str[0] = c;
 	i++;
-	return (str);
 	}
+	return (str);
 }
