@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _strdup - Copies a string
- * @s: String to be copied
+ * @str: String to be copied
  *
  * Return: A pointer to the string
  */
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 		sum += i;
 	}
 	s = malloc(sizeof(char) * sum);
-	if (s == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
