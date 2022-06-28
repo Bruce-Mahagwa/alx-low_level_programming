@@ -24,7 +24,7 @@ int main(void)
 
 
 
-	        s = _strdup("ALX SE");
+	        s = _strdup(NULL);
 
 		    if (s == NULL)
 
