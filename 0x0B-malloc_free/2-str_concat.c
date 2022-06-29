@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * str_concat - concatenates a string
  * @s1: First string
@@ -9,47 +10,38 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, k, l, m, n, o;
+	int i, j, m, n;
+
+	char *p1 = s1, *p2 = s2;
 
 	char *s;
 
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		k = i;
-	}
-	for (j = 0; s2[j] != '\0'; j++)
-	{
-		l = j;
-	}
-	s = malloc(sizeof(char) * (k + l + 2));
-	if (s1 == NULL)
+	if (p1 == NULL)
 	{
 		s1 = "";
 	}
-	if (s2 == NULL)
+	if (p2 == NULL)
 	{
 		s2 = "";
 	}
+	for (i = 0; s1[i] != '\0'; i++)
+	{
+	}
+	for (j = 0; s2[j] != '\0'; j++)
+	{
+	}
+	s = malloc(sizeof(char) * (i + j + 1));
 	if (s == NULL)
 	{
 		return (NULL);
 	}
-	if (s1[0] == '\0')
-	{
-		for (m = 0; s2[m] != '\0'; m++)
-		{
-			s[m] = s2[m];
-		}
-		return (s);
-	}
-	for (m = 0; s1[m] != '\0'; m++)
+	for (m = 0; m < i ; m++)
 	{
 		s[m] = s1[m];
 	}
-	o = k + 1;
-	for (n = 0; s2[n] != '\0'; n++)
+	for (n = 0; n < j; n++)
 	{
-		s[o + n] = s2[n];
+		s[i++] = s2[n];
 	}
 return (s);
 }
