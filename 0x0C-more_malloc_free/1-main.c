@@ -24,7 +24,7 @@ int main(void)
 
 
 
-	        concat = string_nconcat(NULL, "School !!!", 15);
+	        concat = string_nconcat("School", NULL, 6);
 
 		    printf("%s\n", concat);
 
