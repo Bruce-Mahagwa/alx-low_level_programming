@@ -11,10 +11,13 @@ void *malloc_checked(unsigned int b)
 {
 	char *s;
 
+	char *str;
+
+	str = "98";
 	s = malloc(b);
 	if (s == NULL)
 	{
-		return (NULL);
+		return (str);
 	}
 	else
 	{
