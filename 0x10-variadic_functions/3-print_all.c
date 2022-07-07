@@ -28,6 +28,14 @@ void print_all(const char * const format, ...)
 	}
 	while (j < i)
 	{
+/**		if (format[j] == 'c' || format[j] == 'i' || format[j] == 'f' || format[j] == 's')
+		{
+			m = va_arg(list, int);
+			k = va_arg(list, int);
+			x = va_arg(list, double);
+			y = va_arg(list, char *);
+			printf("%c, %d, %f, %s", m, k, x, y);
+		}*/
 		if (format[j] == 'c')
 		{
 			m = va_arg(list, int);
