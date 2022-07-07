@@ -23,7 +23,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("%s%s ", va_arg(list, char *), separator);
+			printf("%s%s", va_arg(list, char *), separator);
 		}
 	}
 	for (j = n - 1; j < n; j++)
