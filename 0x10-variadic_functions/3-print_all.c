@@ -16,6 +16,8 @@ void print_all(const char * const format, ...)
 
 	char *y;
 
+	char p;
+
 	va_list list;
 
 	va_start(list, format);
@@ -28,33 +30,25 @@ void print_all(const char * const format, ...)
 	}
 	while (j < i)
 	{
-/**		if (format[j] == 'c' || format[j] == 'i' || format[j] == 'f' || format[j] == 's')
+		p = format[j];
+		switch(p)
 		{
-			m = va_arg(list, int);
-			k = va_arg(list, int);
-			x = va_arg(list, double);
-			y = va_arg(list, char *);
-			printf("%c, %d, %f, %s", m, k, x, y);
-		}*/
-		if (format[j] == 'c')
-		{
-			m = va_arg(list, int);
-			printf("%c, ", m);
-		}
-		else if (format[j] == 'i')
-		{
-			k = va_arg(list, int);
-			printf("%d, ", k);
-		}
-		else if (format[j] == 'f')
-		{
-			x = va_arg(list, double);
-			printf("%f, ", x);
-		}
-		else if (format[j] == 's')
-		{
-			y = va_arg(list, char *);
-			printf("%s", y);
+			case 'c':
+				m = va_arg(list, int);
+				printf("%c, ", m);
+				break;
+			case 'i':
+				k = va_arg(list, int);
+				printf("%d, ", k);
+				break;
+			case 'f':
+				x = va_arg(list, double);
+				printf("%f, ", x);
+				break;
+			case 's':
+				y = va_arg(list, char *);
+				printf("%s", y);
+				break;
 		}
 		j++;
 	}
