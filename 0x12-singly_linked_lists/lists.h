@@ -1,53 +1,18 @@
 #ifndef LISTS_H
 #define LISTS_H
 #include <stdio.h>
-#include <unistd.h>
 /**
- *
- *  * struct list_s - singly linked list
- *
- *   * @str: string - (malloc'ed string)
- *
- *    * @len: length of the string
- *
- *     * @next: points to the next node
- *
- *      *
- *
- *       * Description: singly linked list node structure
- *
- *        */
-
+ * list_t - an alias for a struct
+ * @str: a string pointer
+ * @len: length of the string
+ * @next: a pointer to the next node
+ */
 typedef struct list_s
 {
-
-	    char *str;
-
-	        unsigned int len;
-
-		    struct list_s *next;
-
+	char *str;
+	unsigned int len;	
+       	struct list_s *next;
 } list_t;
-/**
- *
- *  * _putchar - writes the character c to stdout
- *
- *   * @c: The character to print
- *
- *    *
- *
- *     * Return: On success 1.
- *
- *      * On error, -1 is returned, and errno is set appropriately.
- *
- *       */
-
-int _putchar(char c)
-
-{
-
-		return (write(1, &c, 1));
-
-}
+int _putchar(char c);
 size_t print_list(const list_t *h);
 #endif
