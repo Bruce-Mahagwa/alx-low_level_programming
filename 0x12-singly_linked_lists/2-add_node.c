@@ -1,5 +1,6 @@
 #include "lists.h"
-/**len - finds length of string
+/**
+ * len - finds length of string
  * @: a string
  *
  * Return: Returns length
@@ -24,7 +25,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
 
-	if (str ==NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
