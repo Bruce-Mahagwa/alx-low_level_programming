@@ -4,16 +4,16 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * list_t - an alias for a struct
+ * struct list_s - a struct
  * @str: a string pointer
  * @len: length of the string
  * @next: a pointer to the next node
  */
 typedef struct list_s
 {
-	char *str;
-	unsigned int len;	
-       	struct list_s *next;
+char *str;
+unsigned int len;
+struct list_s *next;
 } list_t;
 int _putchar(char c);
 size_t print_list(const list_t *h);
