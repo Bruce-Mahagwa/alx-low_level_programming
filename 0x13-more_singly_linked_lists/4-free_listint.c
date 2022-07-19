@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free-listint - frees a linked list
+ * free_listint - frees a linked list
  * @head: a pointer to a linked list
  *
  * Return: Returns void
