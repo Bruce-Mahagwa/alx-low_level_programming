@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def island_perimeter(grid):
+    """calculates the perimeter of an island"""
     length = len(grid[0])
     gridlen = len(grid)
     arr = []
