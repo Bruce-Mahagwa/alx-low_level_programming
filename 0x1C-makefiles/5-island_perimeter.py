@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""contains the island_perimeter function"""
 def island_perimeter(grid):
     """calculates the perimeter of an island"""
     length = len(grid[0])
