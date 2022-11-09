@@ -15,7 +15,7 @@ def island_perimeter(grid):
     for l in arr:
         for j in range(1, 2):
             newerarr.append(l[j])
-    highest = max(newarr) - min(newarr) + 1
-    ranges = max(newerarr) - min(newerarr) + 1
+    highest = (max(newarr) - min(newarr)) + 1
+    ranges = (max(newerarr) - min(newerarr)) + 1
     perimeter = highest * 2 + ranges * 2
     return perimeter
